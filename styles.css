@@ -16,9 +16,31 @@ a {
     color: #0d6efd;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     padding: 0px;
     margin: 0px;
+}
+
+.btn {
+    background-color: #008080;
+    border: #008080 solid 2px;
+    width: 80%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+
+    transition: background 0.3s ease-in, color 0.3s ease-in;
+}
+
+.btn:hover {
+    background-color: #fefefe;
+    color: #008080;
 }
 
 /* HEADER STYLES */
@@ -62,13 +84,16 @@ header a {
 
 
 /* SECTION STYLES */
+main section {
+    padding: 100px 25px;
+}
 
 section h2 {
     text-align: center;
 }
 
 .content-group {
-    margin: 100px 0px;
+    margin: 150px 0px;
 }
 
 .note {
@@ -79,7 +104,6 @@ section h2 {
 
 /* NATIONAL STYLES */
 #national {
-    padding: 100px 25px;
     background-color: #EEEBD3;
 }
 
@@ -110,4 +134,26 @@ section h2 {
 
 .contact-item svg {
     width: 20px;
+}
+
+
+
+
+/* IDAHO STYLES */
+.district-resources {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 75px;
+
+    text-align: center;
+}
+
+.resource-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-list a {
+    margin: 10px 0px;
 }
