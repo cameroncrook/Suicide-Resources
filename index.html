@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="sticky-nav">
+        <nav class="sticky-nav">
+            <a href="#national">National</a>
+            <a href="#state">Idaho</a>
+            <a href="#regional">Kootenai County</a>
+        </nav>
+    </div>
+    
     <header>
         <h1>Suicide Resources</h1>
 
@@ -219,7 +227,7 @@
                 <p>A working definition of recovery from mental disorders and/or substance use disorders:</p>
                 <p style="font-style: italic;">A process of change through which individuals improve their health and wellness, live a self-directed life and strive to reach their full potential.</p>
 
-                <div style="display: flex; justify-content: space-evenly; margin-top: 50px;">
+                <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; margin-top: 50px;">
                     <a href="https://www.idahosuicideprevention.org/">Hotline</a>
                     <a href="https://healthandwelfare.idaho.gov/Families/SuicidePrevention/tabid/486/Default.aspx">Suicide Prevention Program</a>
                     <a href="http://healthandwelfare.idaho.gov/Families/SuicidePreventionProgram/SuicideIdahoCouncilonSuicidePrevention/tabid/1921/Default.aspx">Council on Suicide Prevention</a>
@@ -227,8 +235,8 @@
                 </div>
             </div>
 
-            <div class="content-group">
-                <div>
+            <div class="safeguard">
+                <div class="safeguard__item">
                     <h4>Suicide, Guns, and Public Health</h4>
 
                     <p>Most efforts to prevent suicide focus on why people take their lives. But as we understand more about who attempts suicide and when and where and why, it becomes increasingly clear that how a person attempts–the means they use–plays a key role in whether they live or die.</p>
@@ -238,7 +246,7 @@
                         <a href="#">Harvard School of Public Health</a>
                     </div>
                 </div>
-                <div>
+                <div class="safeguard__item">
                     <h4>Safe Guard Your Home</h4>
 
                     <p>Even if you think your child is not at risk for suicide, why take chances? These simple steps can help you suicide-proof your home and possibly save a life.</p>
@@ -255,9 +263,9 @@
         <section id="regional">
             <h2>Kootenai County Resources</h2>
 
-            <div class="content-group">
-                <div>
-                    <h3>24 Hour Crisis Lines</h3>
+            <h3>24 Hour Crisis Lines</h3>
+            <div class="crisis-content">
+                <div class="crisis-content__resources">
                     <div class="crisis-line">
                         <p>Domestic Violence Hotline</p>
                         <p>208-664-9303</p>
@@ -286,10 +294,78 @@
                         <p>Region One Mobile Mental Health Response</p>
                         <p>208-769-1406</p>
                     </div>
+                    <div class="crisis-resource">
+                        <a href="http://panhandlehealthdistrict.org/">Panhandle Health District</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://healthandwelfare.idaho.gov/ContactUs/Region1/tabid/225/Default.aspx">Idaho Dept. of Health &amp; Welfare – Region 1</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://www.kootenairecovery.org/">Kootenai Recovery Community Center</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="Kootenai Recovery Community Center">National Sexual Assault Hotline</a>
+                        <p>(800) 656-4673</p>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://988lifeline.org/">National Suicide and Crisis Lifeline</a>
+                        <p>988</p>
+                        <a href="https://chat.988lifeline.org/">Chat Online</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://988lifeline.org/deaf-hard-of-hearing-hearing-loss/">National Suicide and Crisis Lifeline (options for deaf and hard of hearing)</a>
+                        <p>For TTY Users: Use your preferred relay service or dial 711 then 988</p>
+                        <a href="https://chat.988lifeline.org/">Chat Online</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://southernagexchange.org/farmer-support/">SAgE’s Farmer Support Hotline</a>
+                        <p>833-381-SAGE</p>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://www.samhsa.gov/find-help/national-helpline">Substance Abuse and Mental Health Services Administration National Helpline</a>
+                        <p>(800) 662-4357</p>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://www.veteranscrisisline.net/">Veterans Crisis Line</a>
+                        <p>988, then press 1</p>
+                        <p>Text 838255</p>
+                        <a href="https://www.veteranscrisisline.net/get-help-now/chat/">Chat Online</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://www.childhelphotline.org/">Childhelp National Child Abuse Hotline</a>
+                        <p>(800) 422-4453</p>
+                        <a href="https://www.crisistextline.org/">Crisis Text Line</a>
+                        <p>Text HOME to 741741</p>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://988lifeline.org/es/servicios-de-traduccion/servicios-en-espanol/">Nacional de Prevención del Suicidio</a>
+                        <p>(888) 628-9454</p>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://na.org/">Narcotics Anonymous</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://www.thehotline.org/">National Domestic Violence Hotline</a>
+                        <p>(800) 799-7233</p>
+                    </div>
                 </div>
 
-                <div>
-
+                <h3>Youth Specific</h3>
+                <div class="crisis-content__resources">
+                    <div class="crisis-resource">
+                        <a href="https://thechildrensvillage.org/">Formerly Children&#39;s Village: Youth and Family Services in Coeur d&#39;Alene, Idaho |
+                            Providing families respite care, emergency shelter, family support, and foster
+                            care youth residential therapy</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://www.villageofhopecda.com/">Village of Hope CDA | Foster Care Support</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://www.youthranch.org/">Idaho Youth Ranch offers Counseling for Youth and Families in Idaho</a>
+                    </div>
+                    <div class="crisis-resource">
+                        <a href="https://www.safepassageid.org/">Safe Passage | Domestic Abuse | Coeur d&#39;Alene, ID</a>
+                    </div>
                 </div>
             </div>
         </section>
