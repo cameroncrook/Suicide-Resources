@@ -95,6 +95,12 @@ header a {
     margin: 100px 0px;
 }
 
+@media screen and (max-width: 700px) {
+    .navbar {
+        grid-template-columns: 1fr;
+    }
+}
+
 .navbar .navbar__item {
     justify-self: center;
     display: flex;
@@ -145,6 +151,12 @@ section h2 {
     grid-gap: 30px;
 }
 
+@media screen and (max-width: 700px) {
+    .national-services {
+        grid-template-columns: 1fr;
+    }
+}
+
 .national-services__item {
     text-align: center;
 }
@@ -181,6 +193,18 @@ section h2 {
     text-align: center;
 }
 
+@media screen and (max-width: 950px) {
+    .district-resources {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .district-resources {
+        grid-template-columns: 1fr;
+    }
+}
+
 .resource-list {
     display: flex;
     flex-direction: column;
@@ -188,6 +212,13 @@ section h2 {
 
 .resource-list a {
     margin: 10px 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .recovery-resources {
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
 
 .safeguard {
@@ -203,6 +234,7 @@ section h2 {
     max-width: 100%;
     text-align: center;
     padding: 15px;
+    margin-top: 20px;
 
     box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
@@ -252,8 +284,9 @@ section h2 {
 }
 
 .crisis-content__resources {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     row-gap: 50px;
     column-gap: 25px;
     text-align: center;
@@ -261,10 +294,11 @@ section h2 {
 }
 
 .crisis-content__resources > div {
-    width: 75%;
-    min-height: 175px;
+    width: 265px;
+    min-height: 200px;
     justify-self: center;
     background-color: #fefefe;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 10px;
     display: flex;
@@ -273,3 +307,47 @@ section h2 {
     flex-direction: column;
 }
 
+
+/* Additional Styles */
+#additional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    background-color: #008080;
+}
+
+@media screen and (max-width: 700px) {
+    #additional {
+        grid-template-columns: 1fr;
+    }
+}
+
+.safety-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.safety-plan img {
+    max-height: 90vh;
+}
+
+.qpr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.qpr h2 {
+    font-size: 36px;
+}
+
+.qpr a {
+    background-color: #EEEBD3;
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+}
